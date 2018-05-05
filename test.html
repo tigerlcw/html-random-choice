@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>타이틀 넣는 곳</title>
+<style>
+body {
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: '배달의민족 한나는 열한살', '배달의민족 주아' , '나눔고딕';
+    font-style: bold;
+    }
+    </style>
+</head>
+<body style="background-image: url('simsim.png')">
+        <center>
+            <br>
+            <br>
+    <h1>큰 제목 넣는곳</h1>
+    <br><br>
+    <button type="button"id="buttonE"onclick="button_event();" style="background-color:red; width:150pt; height: 60pt">2018 해주의 선택</button>
+    <br><br>       
+
+<script type="text/javascript">
+function button_event(){
+
+    var list = new Array('크레이지아케이드', '테일즈런너', '디시트', '배틀그라운드', '오버워치', '서든어택','Deep Sleep','토론 ㄱㄱ');
+
+document.write(randomlist(list), '<br />');
+setTimeout("history.go(0);", 1000);
+
+function randomlist(a) {
+  return a[Math.floor(Math.random() * a.length)];
+}
+
+}
+
+
+
+</script>
+<br>
+<input type="file" accept="file/*" onchange="openFile(Event)"/>
+<img id="output">
+
+<br><br>
+
+<audio controls autoplay>
+        <source src="test.mp3" type="audio/mpeg">
+      </audio>
+      <script>
+      var openFile=function(Event){
+          var input=Event.target;
+      }
+      </script>
+</center>
+</body>
+</html>
