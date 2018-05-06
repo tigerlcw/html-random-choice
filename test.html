@@ -21,41 +21,34 @@ body {
             <br>
             <br>
     <h1>큰 제목 넣는곳</h1>
-    <br><br>
-    <button type="button"id="buttonE"onclick="button_event();" style="background-color:red; width:150pt; height: 60pt">2018 해주의 선택</button>
-    <br><br>       
+    <br>
+    <button type="button"id="buttonE"onclick="button_event();" style="background-color:red; width:150pt; height: 60pt">버어어어튼</button>
+    <br>  
 
 <script type="text/javascript">
 function button_event(){
 
-    var list = new Array('크레이지아케이드', '테일즈런너', '디시트', '배틀그라운드', '오버워치', '서든어택','Deep Sleep','토론 ㄱㄱ');
-
+var list = new Array('크레이지아케이드', '테일즈런너', '디시트', '배틀그라운드', '오버워치', '서든어택','Deep Sleep','마피아42','토론 ㄱㄱ');
+//리스트안에 투표할 내용을 입력하세요!
 document.write(randomlist(list), '<br />');
+prompt("추첨 결과에 대해 동의 하십니까? ㅇㅈ?", "ㅇㅇㅈ");
+//확인창이 뜬다.
 setTimeout("history.go(0);", 1000);
-
+//10초 뒤 이전 페이지로 이동
 function randomlist(a) {
+    //list 랜덤 함수
   return a[Math.floor(Math.random() * a.length)];
 }
 
 }
-
-
-
 </script>
 <br>
-<input type="file" accept="file/*" onchange="openFile(Event)"/>
-<img id="output">
-
-<br><br>
-
+   
+<br>
 <audio controls autoplay>
         <source src="test.mp3" type="audio/mpeg">
       </audio>
-      <script>
-      var openFile=function(Event){
-          var input=Event.target;
-      }
-      </script>
+
 </center>
 </body>
 </html>
